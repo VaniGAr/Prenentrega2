@@ -146,11 +146,6 @@ main {
 
 /* Tortas */
 
-.producto {
-    margin-bottom: 90px;
-    padding: 10px;
-}
-
 .foto {
     height: 200px;
 }
@@ -162,62 +157,7 @@ main {
 
     row-gap: 30px;
 }
-
-
-
-/* Formulario */
-
-h1 {
-    display: inline;
-    /* Ejemplo de linea y bloque */
-}
-
-.consultas-form {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    
-
-}
-
-.consultas-form label{
-    display: flex;    
-    font-size: x-large;
-
-
-    margin: 15px;
-    /* de los bordes hacia afuera */
-}
-
-.consultas-form label input, textarea{
-    border: none;
-    border-radius: 15px;
-    margin: 0 10px;
-    padding: 5px 10px ;
-}
-
-.sector-comentarios {
-    width: 300px;
-    height: 200px;
-}
-
-.consultas-form button{
-    width: 15%;
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 10px 10px;
-    background-color: rgb(250, 210, 230);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-.consultas-form button:hover{
-    background-color: crimson;
-    color: white;
-    width: 50%;
-    transition: 1s;
-}
-
+/*La parte formulario se encuentra en sass*/
 
 /* Contacto */
 

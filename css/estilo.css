@@ -1,0 +1,42 @@
+h1 {
+  display: inline;
+}
+
+.consultas-form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.consultas-form label {
+  display: flex;
+  font-size: x-large;
+  margin: 15px;
+}
+.consultas-form label input,
+.consultas-form label textarea {
+  border: none;
+  border-radius: 15px;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+.consultas-form .sector-comentarios {
+  width: 300px;
+  height: 200px;
+}
+.consultas-form button {
+  width: 15%;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 5px 10px;
+  background-color: rgb(250, 210, 230);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.consultas-form button:hover {
+  background-color: crimson;
+  color: white;
+  width: 50%;
+  transition: 1s;
+}
+
+/*# sourceMappingURL=estilo.css.map */
