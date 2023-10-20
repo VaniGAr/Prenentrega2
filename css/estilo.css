@@ -38,5 +38,45 @@ h1 {
   width: 50%;
   transition: 1s;
 }
+@media (min-width:768px) and (max-width: 1024px){
+  .inicio-consultas p{
+    font-size: x-large;
+  }
+  .consultas-form{
+    gap:2.5rem
+  }
+  .consultas-form label input,
+  .consultas-form label textarea{
+    width: 80%;
+    font-size: medium;
+  }
+  
+  .consultas-form button{
+    width: auto;
+  } 
+  .consultas-form button:hover{
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 768px){
+  .consultas-form label input,
+.consultas-form label textarea{
+  width: 80%;
+  font-size: medium;
+}
+
+.consultas-form button{
+  width: auto;
+} 
+.consultas-form button:hover{
+  background-color: crimson;
+  color: white;
+  width: 100%;
+  transition: 1s;
+}
+}
 
 /*# sourceMappingURL=estilo.css.map */

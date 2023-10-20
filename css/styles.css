@@ -1,14 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
 /* Normalize */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif
+    font-family: var(--fuente-textos);
+}
+
+/* VARIABLES */
+:root{
+    --fuente-textos:'Poppins', sans-serif;
+}
+
+/* ANIMACIONES */
+@keyframes titulos {
+    0%{
+        transform: translateX(-10vh);
+    }
+}
+
+.titulo-animado{
+    padding-top: 20px;
+    animation-name: titulos;
+    animation-duration: 1s;
 }
 
 body {
     background-color: rgb(250, 210, 230);
+}
+
+/* Cambiar el color del encabezado a coral */
+header {
+    background-color: rgb(212, 127, 190);
+}
+
+/* Estilizar la barra de búsqueda */
+.form-control {
+    background-color: #F0F0F0; /* Color de fondo de la barra de búsqueda */
+    border: 2px solid rgb(212, 127, 190); /* Color del borde de la barra de búsqueda */
+    color: #333; /* Color del texto en la barra de búsqueda */
+}
+
+/* Estilizar el botón de búsqueda */
+.btn-outline-success {
+    background-color: #b06591; /* Color de fondo del botón de búsqueda */
+    border-color: #873979; /* Color del borde del botón de búsqueda */
+    color: #FFF; /* Color del texto en el botón de búsqueda */
 }
 
 h1, h2{
@@ -49,23 +90,21 @@ header nav:nth-child(1) div a>:nth-child(1) {
     box-shadow: rgba(0, 0, 0, 0.461) 0px 0px 15px;
 }
 
-main {
-    padding-top: 20px;
-}
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero img {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 15px;
 }
 
 .hero div {
-    flex-basis: 50%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -111,11 +150,8 @@ main {
 .flex-container {
     display: flex;
     flex-flow: wrap;
-
-
     align-items: center;
     justify-content: center;
-
     gap: 10px;
 }
 
@@ -141,7 +177,21 @@ main {
     border-radius: 15px;
     width: 100%;
 }
+/* Consultas */
 
+.inicio-consultas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1-consultas{
+    text-align: center;
+}
+.p-consultas{
+    text-align: center;
+    width: 80%;
+}
 
 
 /* Tortas */
@@ -157,23 +207,47 @@ main {
 
     row-gap: 30px;
 }
+
+.tienda div:hover{
+    box-shadow: rgba(0, 0, 0, 0.452) 5px 5px 15px;
+}
+
 /*La parte formulario se encuentra en sass*/
 
 /* Contacto */
 
-.img-contacto {
-    width: 74%;
-    height: 600px;
-    margin-left: 13%;
-}
+.caja-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    color: #F0F0F0;
+    text-shadow: #333 0 0 15px;
+    font-size: 8rem;
+
+    background: url(https://es.cravingsjournal.com/wp-content/uploads/2020/02/mini-torta-red-velvet-2.jpg) no-repeat center;
+    background-size: cover; 
+    
+    height: 50vh;
+}
+.caja-contacto h1{
+    font-size: 3rem;
+}
+.data-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
 footer{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: rgb(255, 246, 240);
     border-radius: 70px 70px 0px 0px;
     padding: 20px 0;
     gap: 10px;
@@ -198,4 +272,31 @@ footer h3{
 .iconos-footer a:hover{
     color: crimson;
     transition: 0.5s;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1023px){
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+    
+    .hero div {
+        flex-basis: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .caja-contacto{
+        background-attachment: fixed;
+    }
 }
